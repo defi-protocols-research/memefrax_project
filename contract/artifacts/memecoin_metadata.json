@@ -18,14 +18,24 @@
 						"type": "string"
 					},
 					{
-						"internalType": "uint256",
-						"name": "totalsupply",
-						"type": "uint256"
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
 					},
 					{
 						"internalType": "address",
 						"name": "owner",
 						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_totalsupply",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "percentminttoowner",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -209,6 +219,13 @@
 				"type": "event"
 			},
 			{
+				"inputs": [],
+				"name": "addliquidity",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -283,9 +300,9 @@
 						"type": "uint256"
 					}
 				],
-				"name": "buyMeme",
+				"name": "buyPreSaleMeme",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -341,6 +358,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "description",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "name",
 				"outputs": [
 					{
@@ -360,6 +390,19 @@
 						"internalType": "address",
 						"name": "",
 						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "rate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -401,6 +444,19 @@
 			{
 				"inputs": [],
 				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalsupply",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -476,6 +532,10 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -663,10 +723,10 @@
 			]
 		},
 		"contract/memecoin.sol": {
-			"keccak256": "0xe855374d54a75079ec44e4e93a9432bddbdcbb712dc07dda42ff54052fa380b9",
+			"keccak256": "0x464c4fac25ca215d91be48c8337bba04ad78e1090e50f4827a64447be2a40843",
 			"urls": [
-				"bzz-raw://27d25fb3f951f050966c640158aadf297cb267da27dd8f120cb151e6543d2ac2",
-				"dweb:/ipfs/QmVXvk75QC9gyTZFeaNASJzxC45cYUjvMh3KUkKgzzYMwa"
+				"bzz-raw://3673c23e9b9e1fde6994335e3427a484730283d7538a9238c5ece8c02dfddb51",
+				"dweb:/ipfs/Qmc626C2dQpr7MryyH2AArt5ibYpCabn4JjNd4YPYtsyRm"
 			]
 		}
 	},

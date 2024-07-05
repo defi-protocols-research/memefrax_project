@@ -6,6 +6,37 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "memeaddress",
+						"type": "address"
+					}
+				],
+				"name": "memedetail",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "counterId",
 				"outputs": [
@@ -31,14 +62,24 @@
 						"type": "string"
 					},
 					{
-						"internalType": "uint256",
-						"name": "totalsupply",
-						"type": "uint256"
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
 					},
 					{
 						"internalType": "address",
 						"name": "owner",
 						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_totalsupply",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "percent",
+						"type": "uint256"
 					}
 				],
 				"name": "createMemecoin",
@@ -147,10 +188,10 @@
 			]
 		},
 		"contract/memecoin.sol": {
-			"keccak256": "0xe855374d54a75079ec44e4e93a9432bddbdcbb712dc07dda42ff54052fa380b9",
+			"keccak256": "0x464c4fac25ca215d91be48c8337bba04ad78e1090e50f4827a64447be2a40843",
 			"urls": [
-				"bzz-raw://27d25fb3f951f050966c640158aadf297cb267da27dd8f120cb151e6543d2ac2",
-				"dweb:/ipfs/QmVXvk75QC9gyTZFeaNASJzxC45cYUjvMh3KUkKgzzYMwa"
+				"bzz-raw://3673c23e9b9e1fde6994335e3427a484730283d7538a9238c5ece8c02dfddb51",
+				"dweb:/ipfs/Qmc626C2dQpr7MryyH2AArt5ibYpCabn4JjNd4YPYtsyRm"
 			]
 		}
 	},
